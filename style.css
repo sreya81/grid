@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+img{
+     width:100%;
+}
+.img{
+    position: relative;
+}
+h4{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding:10px;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+@media screen and (max-width:600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen  and (min-width:600px) and (max-width:750px){
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
